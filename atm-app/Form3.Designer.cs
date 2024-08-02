@@ -34,6 +34,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.mskAccountNu = new System.Windows.Forms.MaskedTextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.mskTC = new System.Windows.Forms.MaskedTextBox();
+            this.mskPhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAccountNu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -49,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 144);
+            this.label1.Location = new System.Drawing.Point(117, 155);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 23);
@@ -59,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(155, 194);
+            this.label2.Location = new System.Drawing.Point(159, 212);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 23);
@@ -69,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 246);
+            this.label3.Location = new System.Drawing.Point(137, 276);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 23);
@@ -79,7 +87,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 295);
+            this.label4.Location = new System.Drawing.Point(56, 346);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 23);
@@ -89,19 +97,95 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(110, 348);
+            this.label6.Location = new System.Drawing.Point(110, 399);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 23);
             this.label6.TabIndex = 10;
             this.label6.Text = "Password:";
             // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(223, 91);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(156, 31);
+            this.txtName.TabIndex = 13;
+            this.txtName.UseSystemPasswordChar = true;
+            // 
+            // mskAccountNu
+            // 
+            this.mskAccountNu.Enabled = false;
+            this.mskAccountNu.Location = new System.Drawing.Point(223, 338);
+            this.mskAccountNu.Mask = "000000";
+            this.mskAccountNu.Name = "mskAccountNu";
+            this.mskAccountNu.Size = new System.Drawing.Size(156, 31);
+            this.mskAccountNu.TabIndex = 12;
+            this.mskAccountNu.ValidatingType = typeof(int);
+            // 
+            // txtSurname
+            // 
+            this.txtSurname.Location = new System.Drawing.Point(223, 152);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(156, 31);
+            this.txtSurname.TabIndex = 14;
+            this.txtSurname.UseSystemPasswordChar = true;
+            // 
+            // mskTC
+            // 
+            this.mskTC.Location = new System.Drawing.Point(223, 209);
+            this.mskTC.Mask = "00000000000";
+            this.mskTC.Name = "mskTC";
+            this.mskTC.Size = new System.Drawing.Size(156, 31);
+            this.mskTC.TabIndex = 15;
+            this.mskTC.ValidatingType = typeof(int);
+            // 
+            // mskPhone
+            // 
+            this.mskPhone.Location = new System.Drawing.Point(223, 273);
+            this.mskPhone.Mask = "(999) 000-0000";
+            this.mskPhone.Name = "mskPhone";
+            this.mskPhone.Size = new System.Drawing.Size(156, 31);
+            this.mskPhone.TabIndex = 16;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(223, 396);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(156, 31);
+            this.txtPassword.TabIndex = 17;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(223, 457);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 39);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Register";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnAccountNu
+            // 
+            this.btnAccountNu.Location = new System.Drawing.Point(385, 338);
+            this.btnAccountNu.Name = "btnAccountNu";
+            this.btnAccountNu.Size = new System.Drawing.Size(50, 34);
+            this.btnAccountNu.TabIndex = 19;
+            this.btnAccountNu.Text = "...";
+            this.btnAccountNu.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1107, 762);
+            this.ClientSize = new System.Drawing.Size(580, 629);
+            this.Controls.Add(this.btnAccountNu);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.mskPhone);
+            this.Controls.Add(this.mskTC);
+            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.mskAccountNu);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -125,5 +209,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.MaskedTextBox mskAccountNu;
+        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.MaskedTextBox mskTC;
+        private System.Windows.Forms.MaskedTextBox mskPhone;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAccountNu;
     }
 }
