@@ -39,8 +39,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.mskAccountNu = new System.Windows.Forms.MaskedTextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtAmount = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnSend = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,8 +127,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnSend);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.txtAmount);
             this.groupBox1.Controls.Add(this.mskAccountNu);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Location = new System.Drawing.Point(28, 339);
@@ -156,13 +158,13 @@
             this.mskAccountNu.TabIndex = 10;
             this.mskAccountNu.ValidatingType = typeof(int);
             // 
-            // txtPassword
+            // txtAmount
             // 
-            this.txtPassword.Location = new System.Drawing.Point(177, 108);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(156, 33);
-            this.txtPassword.TabIndex = 11;
-            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtAmount.Location = new System.Drawing.Point(177, 108);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(156, 33);
+            this.txtAmount.TabIndex = 11;
+            this.txtAmount.UseSystemPasswordChar = true;
             // 
             // label10
             // 
@@ -173,6 +175,15 @@
             this.label10.Size = new System.Drawing.Size(87, 26);
             this.label10.TabIndex = 12;
             this.label10.Text = "Amount:";
+            // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(177, 171);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(156, 34);
+            this.btnSend.TabIndex = 13;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -214,6 +225,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MaskedTextBox mskAccountNu;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtAmount;
+        private System.Windows.Forms.Button btnSend;
     }
 }

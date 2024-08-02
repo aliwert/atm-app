@@ -33,6 +33,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.mskAccountNu = new System.Windows.Forms.MaskedTextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.lnkSignup = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -79,12 +80,23 @@
             this.btnLogin.Text = "Log In";
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
+            // lnkSignup
+            // 
+            this.lnkSignup.AutoSize = true;
+            this.lnkSignup.Location = new System.Drawing.Point(558, 251);
+            this.lnkSignup.Name = "lnkSignup";
+            this.lnkSignup.Size = new System.Drawing.Size(141, 19);
+            this.lnkSignup.TabIndex = 4;
+            this.lnkSignup.TabStop = true;
+            this.lnkSignup.Text = "Create New Account";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(838, 545);
+            this.Controls.Add(this.lnkSignup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.mskAccountNu);
             this.Controls.Add(this.txtPassword);
@@ -107,6 +119,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.MaskedTextBox mskAccountNu;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.LinkLabel lnkSignup;
     }
 }
 
