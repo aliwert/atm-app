@@ -30,14 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.mskAccountNu = new System.Windows.Forms.MaskedTextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 54);
+            this.label1.Location = new System.Drawing.Point(223, 174);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 19);
             this.label1.TabIndex = 0;
@@ -46,37 +47,47 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(140, 108);
+            this.label2.Location = new System.Drawing.Point(268, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 27);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtPassword.Location = new System.Drawing.Point(349, 243);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(156, 27);
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // maskedTextBox1
+            // mskAccountNu
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(221, 46);
-            this.maskedTextBox1.Mask = "000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(156, 27);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.mskAccountNu.Location = new System.Drawing.Point(349, 171);
+            this.mskAccountNu.Mask = "000000";
+            this.mskAccountNu.Name = "mskAccountNu";
+            this.mskAccountNu.Size = new System.Drawing.Size(156, 27);
+            this.mskAccountNu.TabIndex = 1;
+            this.mskAccountNu.ValidatingType = typeof(int);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(349, 311);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(156, 32);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Log In";
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(838, 545);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.mskAccountNu);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -93,8 +104,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.MaskedTextBox mskAccountNu;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 
