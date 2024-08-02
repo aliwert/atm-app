@@ -109,8 +109,7 @@
             this.txtName.Location = new System.Drawing.Point(223, 91);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(156, 31);
-            this.txtName.TabIndex = 13;
-            this.txtName.UseSystemPasswordChar = true;
+            this.txtName.TabIndex = 1;
             // 
             // mskAccountNu
             // 
@@ -127,8 +126,7 @@
             this.txtSurname.Location = new System.Drawing.Point(223, 152);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(156, 31);
-            this.txtSurname.TabIndex = 14;
-            this.txtSurname.UseSystemPasswordChar = true;
+            this.txtSurname.TabIndex = 2;
             // 
             // mskTC
             // 
@@ -136,7 +134,7 @@
             this.mskTC.Mask = "00000000000";
             this.mskTC.Name = "mskTC";
             this.mskTC.Size = new System.Drawing.Size(156, 31);
-            this.mskTC.TabIndex = 15;
+            this.mskTC.TabIndex = 3;
             this.mskTC.ValidatingType = typeof(int);
             // 
             // mskPhone
@@ -145,21 +143,22 @@
             this.mskPhone.Mask = "(999) 000-0000";
             this.mskPhone.Name = "mskPhone";
             this.mskPhone.Size = new System.Drawing.Size(156, 31);
-            this.mskPhone.TabIndex = 16;
+            this.mskPhone.TabIndex = 4;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(223, 396);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(156, 31);
-            this.txtPassword.TabIndex = 17;
+            this.txtPassword.TabIndex = 6;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(223, 457);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 39);
-            this.button1.TabIndex = 18;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -169,7 +168,7 @@
             this.btnAccountNu.Location = new System.Drawing.Point(385, 338);
             this.btnAccountNu.Name = "btnAccountNu";
             this.btnAccountNu.Size = new System.Drawing.Size(50, 34);
-            this.btnAccountNu.TabIndex = 19;
+            this.btnAccountNu.TabIndex = 5;
             this.btnAccountNu.Text = "...";
             this.btnAccountNu.UseVisualStyleBackColor = true;
             this.btnAccountNu.Click += new System.EventHandler(this.btnAccountNu_Click);

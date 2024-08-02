@@ -16,11 +16,11 @@ namespace atm_app
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LRMEISB\\SQLEXPRESS;Initial Catalog=DbBankTest;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LRMEISB\SQLEXPRESS;Initial Catalog=DbBankTest;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("NAME, SURNAME, TC, PHONE, ACCOUNTNO,PASSWORD) values(@p1,@p2,@p3,@p4,@p5,@p6)", conn);
+            SqlCommand cmd = new SqlCommand(" insert into TBLPEOPLE (NAME, SURNAME, TC, PHONE, ACCOUNTNO,PASSWORD) values(@p1,@p2,@p3,@p4,@p5,@p6)", conn);
             cmd.Parameters.AddWithValue("@p1", txtName.Text);
             cmd.Parameters.AddWithValue("@p2", txtSurname.Text);
             cmd.Parameters.AddWithValue("@p3", mskTC.Text);
@@ -36,7 +36,7 @@ namespace atm_app
         {
             Random random = new Random();
             int number = random.Next(100000, 1000000); // create account number from 100000 to 999999
-
+            mskAccountNu.Text = number.ToString();
         }
     }
 }
