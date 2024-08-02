@@ -16,5 +16,11 @@ namespace atm_app
         {
             InitializeComponent();
         }
+
+        private void lnkSignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form3 frm3 = new Form3();
+            frm3.Show();
+        }
     }
 }

@@ -89,6 +89,7 @@
             this.lnkSignup.TabIndex = 4;
             this.lnkSignup.TabStop = true;
             this.lnkSignup.Text = "Create New Account";
+            this.lnkSignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignup_LinkClicked);
             // 
             // Form1
             // 

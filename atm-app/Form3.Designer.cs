@@ -162,6 +162,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnAccountNu
             // 
@@ -171,6 +172,7 @@
             this.btnAccountNu.TabIndex = 19;
             this.btnAccountNu.Text = "...";
             this.btnAccountNu.UseVisualStyleBackColor = true;
+            this.btnAccountNu.Click += new System.EventHandler(this.btnAccountNu_Click);
             // 
             // Form3
             // 
