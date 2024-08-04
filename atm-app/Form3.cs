@@ -38,5 +38,10 @@ namespace atm_app
             int number = random.Next(100000, 1000000); // create account number from 100000 to 999999
             mskAccountNu.Text = number.ToString();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
