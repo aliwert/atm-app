@@ -16,5 +16,10 @@ namespace atm_app
         {
             InitializeComponent();
         }
+        public string account;
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            lblAccountNu.Text = account;
+        }
     }
 }

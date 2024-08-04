@@ -34,6 +34,7 @@ namespace atm_app
             if (dr.Read())
             {
                 Form2 frm2 = new Form2();
+                frm2.account=mskAccountNu.Text;
                 frm2.Show();
             }
             else

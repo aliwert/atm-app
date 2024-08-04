@@ -32,16 +32,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblNameSurname = new System.Windows.Forms.Label();
+            this.lblAccountNu = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.lblTC = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.mskAccountNu = new System.Windows.Forms.MaskedTextBox();
-            this.txtAmount = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtAmount = new System.Windows.Forms.TextBox();
+            this.mskAccountNu = new System.Windows.Forms.MaskedTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,45 +85,45 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "T.C. :";
             // 
-            // label5
+            // lblNameSurname
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(225, 42);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 26);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Null Null";
+            this.lblNameSurname.AutoSize = true;
+            this.lblNameSurname.Location = new System.Drawing.Point(225, 42);
+            this.lblNameSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNameSurname.Name = "lblNameSurname";
+            this.lblNameSurname.Size = new System.Drawing.Size(87, 26);
+            this.lblNameSurname.TabIndex = 4;
+            this.lblNameSurname.Text = "Null Null";
             // 
-            // label6
+            // lblAccountNu
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(225, 98);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 26);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Null";
+            this.lblAccountNu.AutoSize = true;
+            this.lblAccountNu.Location = new System.Drawing.Point(225, 98);
+            this.lblAccountNu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAccountNu.Name = "lblAccountNu";
+            this.lblAccountNu.Size = new System.Drawing.Size(47, 26);
+            this.lblAccountNu.TabIndex = 5;
+            this.lblAccountNu.Text = "Null";
             // 
-            // label7
+            // lblPhone
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(225, 160);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 26);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Null";
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(225, 160);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(47, 26);
+            this.lblPhone.TabIndex = 6;
+            this.lblPhone.Text = "Null";
             // 
-            // label8
+            // lblTC
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(225, 208);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 26);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Null";
+            this.lblTC.AutoSize = true;
+            this.lblTC.Location = new System.Drawing.Point(225, 208);
+            this.lblTC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTC.Name = "lblTC";
+            this.lblTC.Size = new System.Drawing.Size(47, 26);
+            this.lblTC.TabIndex = 7;
+            this.lblTC.Text = "Null";
             // 
             // groupBox1
             // 
@@ -139,32 +139,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Transfer";
             // 
-            // label9
+            // btnSend
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 42);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(163, 26);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Account Number:";
-            // 
-            // mskAccountNu
-            // 
-            this.mskAccountNu.Location = new System.Drawing.Point(177, 39);
-            this.mskAccountNu.Mask = "000000";
-            this.mskAccountNu.Name = "mskAccountNu";
-            this.mskAccountNu.Size = new System.Drawing.Size(156, 33);
-            this.mskAccountNu.TabIndex = 10;
-            this.mskAccountNu.ValidatingType = typeof(int);
-            // 
-            // txtAmount
-            // 
-            this.txtAmount.Location = new System.Drawing.Point(177, 108);
-            this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(156, 33);
-            this.txtAmount.TabIndex = 11;
-            this.txtAmount.UseSystemPasswordChar = true;
+            this.btnSend.Location = new System.Drawing.Point(177, 171);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(156, 34);
+            this.btnSend.TabIndex = 13;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -176,14 +158,32 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "Amount:";
             // 
-            // btnSend
+            // txtAmount
             // 
-            this.btnSend.Location = new System.Drawing.Point(177, 171);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(156, 34);
-            this.btnSend.TabIndex = 13;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
+            this.txtAmount.Location = new System.Drawing.Point(177, 108);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(156, 33);
+            this.txtAmount.TabIndex = 11;
+            this.txtAmount.UseSystemPasswordChar = true;
+            // 
+            // mskAccountNu
+            // 
+            this.mskAccountNu.Location = new System.Drawing.Point(177, 39);
+            this.mskAccountNu.Mask = "000000";
+            this.mskAccountNu.Name = "mskAccountNu";
+            this.mskAccountNu.Size = new System.Drawing.Size(156, 33);
+            this.mskAccountNu.TabIndex = 10;
+            this.mskAccountNu.ValidatingType = typeof(int);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 42);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(163, 26);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Account Number:";
             // 
             // Form2
             // 
@@ -192,10 +192,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1052, 762);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblTC);
+            this.Controls.Add(this.lblPhone);
+            this.Controls.Add(this.lblAccountNu);
+            this.Controls.Add(this.lblNameSurname);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -204,6 +204,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -217,10 +218,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblNameSurname;
+        private System.Windows.Forms.Label lblAccountNu;
+        private System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.Label lblTC;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MaskedTextBox mskAccountNu;
