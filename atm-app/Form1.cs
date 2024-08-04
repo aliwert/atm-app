@@ -42,5 +42,10 @@ namespace atm_app
                 MessageBox.Show("Failure Account Number or Password");
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
