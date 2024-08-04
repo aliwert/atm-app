@@ -147,6 +147,7 @@
             this.btnSend.TabIndex = 13;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // label10
             // 
@@ -164,7 +165,6 @@
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(156, 33);
             this.txtAmount.TabIndex = 11;
-            this.txtAmount.UseSystemPasswordChar = true;
             // 
             // mskAccountNu
             // 

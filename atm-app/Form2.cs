@@ -34,5 +34,17 @@ namespace atm_app
             }
             conn.Close();
         }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand command = new SqlCommand("update TBLACCOUNT set BALANCE=BALANCE+@p1 where ACCOUNTNO=@p2", conn);
+            command.Parameters.AddWithValue("@p1", decimal.Parse(txtAmount.Text));
+            command.Parameters.AddWithValue("@p2", account);
+            command.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("The transaction was completed");
+
+        }
     }
 }
